@@ -1,0 +1,36 @@
+﻿Build started 4/15/2014 8:20:07 AM.
+     1>Project "E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\OpenCV-CL_Demo-ShoffTesfaye\OpenCV-CL_Demo-ShoffTesfaye.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:/opencv/sources/modules/ocl/perf /IC:/opencv/sources/modules/features2d/include /IC:/opencv/sources/modules/highgui/include /IC:/opencv/sources/modules/imgproc/include /IC:/opencv/sources/modules/flann/include /IC:/opencv/sources/modules/core/include /IC:/opencv/sources/modules/ts/include /IC:/opencv/sources/modules/ocl/include /IC:/opencv/sources/modules/video/include /IC:/opencv/sources/modules/objdetect/include /IC:/opencv/sources/modules/ml/include /IC:/opencv/sources/modules/calib3d/include /I"C:/opencv-cl-built/modules/ocl" /IC:/opencv/sources/modules/ocl/src /IC:/opencv/sources/modules/ocl/test /IC:/opencv/sources/3rdparty/include/opencl/1.2 /I"C:/opencv-cl-built" /I"C:/Program Files (x86)/AMD/clAmdFft/include" /I"C:/Program Files (x86)/AMD/clAmdBlas/include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _VARIADIC_MAX=10 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\BM_BilateralFilterOCL_ShoffTesfaye.cpp ..\BM_CannyOCL_ShoffTesfaye.cpp ..\BM_FaceDetectOCL_ShoffTesfaye.cpp ..\BM_SobelOCL_ShoffTesfaye.cpp ..\main.cpp ..\oclPerfStats_ShoffTesfaye.cpp
+         BM_BilateralFilterOCL_ShoffTesfaye.cpp
+         BM_CannyOCL_ShoffTesfaye.cpp
+         BM_FaceDetectOCL_ShoffTesfaye.cpp
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(158): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(159): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(170): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(196): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(197): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\BM_FaceDetectOCL_ShoffTesfaye.cpp(208): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         BM_SobelOCL_ShoffTesfaye.cpp
+         main.cpp
+         oclPerfStats_ShoffTesfaye.cpp
+     1>..\oclPerfStats_ShoffTesfaye.cpp(50): warning C4244: '=' : conversion from 'int64' to 'double', possible loss of data
+     1>..\oclPerfStats_ShoffTesfaye.cpp(53): warning C4244: '=' : conversion from 'int64' to 'double', possible loss of data
+     1>..\oclPerfStats_ShoffTesfaye.cpp(86): warning C4244: '=' : conversion from 'double' to 'int64', possible loss of data
+     1>..\oclPerfStats_ShoffTesfaye.cpp(93): warning C4244: '=' : conversion from 'double' to 'int64', possible loss of data
+     1>..\oclPerfStats_ShoffTesfaye.cpp(102): warning C4244: '=' : conversion from 'double' to 'int64', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\Release\OpenCV-CL_Demo-ShoffTesfaye.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\lib\Release\opencv_core248.lib ..\lib\Release\opencv_flann248.lib ..\lib\Release\opencv_imgproc248.lib ..\lib\Release\opencv_highgui248.lib ..\lib\Release\opencv_features2d248.lib ..\lib\Release\opencv_calib3d248.lib ..\lib\Release\opencv_ml248.lib ..\lib\Release\opencv_objdetect248.lib ..\lib\Release\opencv_video248.lib ..\lib\Release\opencv_ocl248.lib ..\lib\Release\opencv_ts248.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\Release\OpenCV-CL_Demo-ShoffTesfaye.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\Release\OpenCV-CL_Demo-ShoffTesfaye.lib" /MACHINE:X86 /SAFESEH Release\BM_BilateralFilterOCL_ShoffTesfaye.obj
+         Release\BM_CannyOCL_ShoffTesfaye.obj
+         Release\BM_FaceDetectOCL_ShoffTesfaye.obj
+         Release\BM_SobelOCL_ShoffTesfaye.obj
+         Release\main.obj
+         Release\oclPerfStats_ShoffTesfaye.obj
+         Generating code
+         Finished generating code
+         OpenCV-CL_Demo-ShoffTesfaye.vcxproj -> E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\Release\OpenCV-CL_Demo-ShoffTesfaye.exe
+     1>Done Building Project "E:\Coding\Visual Studio\OpenCV-CL_Demo-ShoffTesfaye\OpenCV-CL_Demo-ShoffTesfaye\OpenCV-CL_Demo-ShoffTesfaye.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.12

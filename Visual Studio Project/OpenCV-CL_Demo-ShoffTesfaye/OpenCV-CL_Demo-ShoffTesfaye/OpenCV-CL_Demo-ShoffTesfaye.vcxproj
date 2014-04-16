@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{87C9705C-5E54-4CB3-A92A-3858EAD84BDE}</ProjectGuid>
+    <RootNamespace>OpenCVCL_DemoShoffTesfaye</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:/opencv/sources/modules/ocl/perf;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/calib3d/include;C:/opencv-cl-built/modules/ocl;C:/opencv/sources/modules/ocl/src;C:/opencv/sources/modules/ocl/test;C:/opencv/sources/3rdparty/include/opencl/1.2;C:/opencv-cl-built;C:/Program Files (x86)/AMD/clAmdFft/include;C:/Program Files (x86)/AMD/clAmdBlas/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_core248.lib;..\..\lib\Release\opencv_flann248.lib;..\..\lib\Release\opencv_imgproc248.lib;..\..\lib\Release\opencv_highgui248.lib;..\..\lib\Release\opencv_features2d248.lib;..\..\lib\Release\opencv_calib3d248.lib;..\..\lib\Release\opencv_ml248.lib;..\..\lib\Release\opencv_objdetect248.lib;..\..\lib\Release\opencv_video248.lib;..\..\lib\Release\opencv_ocl248.lib;..\..\lib\Release\opencv_ts248.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:/opencv/sources/modules/ocl/perf;C:/opencv/sources/modules/features2d/include;C:/opencv/sources/modules/highgui/include;C:/opencv/sources/modules/imgproc/include;C:/opencv/sources/modules/flann/include;C:/opencv/sources/modules/core/include;C:/opencv/sources/modules/ts/include;C:/opencv/sources/modules/ocl/include;C:/opencv/sources/modules/video/include;C:/opencv/sources/modules/objdetect/include;C:/opencv/sources/modules/ml/include;C:/opencv/sources/modules/calib3d/include;C:/opencv-cl-built/modules/ocl;C:/opencv/sources/modules/ocl/src;C:/opencv/sources/modules/ocl/test;C:/opencv/sources/3rdparty/include/opencl/1.2;C:/opencv-cl-built;C:/Program Files (x86)/AMD/clAmdFft/include;C:/Program Files (x86)/AMD/clAmdBlas/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\Release\opencv_core248.lib;..\lib\Release\opencv_flann248.lib;..\lib\Release\opencv_imgproc248.lib;..\lib\Release\opencv_highgui248.lib;..\lib\Release\opencv_features2d248.lib;..\lib\Release\opencv_calib3d248.lib;..\lib\Release\opencv_ml248.lib;..\lib\Release\opencv_objdetect248.lib;..\lib\Release\opencv_video248.lib;..\lib\Release\opencv_ocl248.lib;..\lib\Release\opencv_ts248.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BM_BilateralFilterOCL_ShoffTesfaye.cpp" />
+    <ClCompile Include="..\BM_CannyOCL_ShoffTesfaye.cpp" />
+    <ClCompile Include="..\BM_FaceDetectOCL_ShoffTesfaye.cpp" />
+    <ClCompile Include="..\BM_SobelOCL_ShoffTesfaye.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\oclPerfStats_ShoffTesfaye.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\h_BM_Functions_ShoffTesfaye.h" />
+    <ClInclude Include="..\h_oclPerfStats_ShoffTesfaye.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
